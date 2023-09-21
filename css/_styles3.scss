@@ -1,0 +1,180 @@
+/* 基本樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbar-brand{
+    width: 5rem;
+    height: auto;
+}
+.logo {
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 10px;
+    background-color: palegreen;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+/* 下拉選單樣式 */
+.dropdown {
+    position: relative; /* 使 .dropdown 成為相對定位容器 */
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    top: 100%;
+    /* left: 50%; */
+}
+.dropdown:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    display:block;
+    margin-right: 0;
+    padding: 10px 20px;
+    width: 60px;
+    margin: 0 auto;
+    padding-right: 0;
+}   
+
+/* 漢堡菜單樣式 */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: transform 0.4s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        background-color: #333;
+        top: 60px;
+        left: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .dropdown:hover .sub-menu {
+        display: block;
+    }
+    #menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    #menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    #menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+/* main */
+.page3_under{
+    background-color: #0F7BC0;
+}
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center;
+    // background-color: #0F7BC0;
+}
+.footer_center {
+
+    text-align: center;
+    /* 文本水平居中 */
+    font-size: 16px;
+    /* 字体大小设置为16px */
+    line-height: 1.5;
+    /* 可选：设置行高，使文本垂直居中 */
+    padding: 20px 0;
+    /* 可选：添加顶部和底部内边距，以增加垂直居中的间距 */
+    /* color: white; */
+}
+
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 水平置中 */
+    align-items: center;
+}
+
+.footer_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 水平置中 */
+    align-items: center;
+}
+
+.footer_under {
+    font-size: 12px;
+    text-align: right;
+    color: gray;
+}
+
+/*# sourceMappingURL=hearder.css.map */
+
+h2 {
+    text-align: center
+}

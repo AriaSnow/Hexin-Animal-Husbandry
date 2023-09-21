@@ -1,0 +1,339 @@
+@charset "UTF-8";
+/* 基本樣式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  width: 5rem;
+  height: auto;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 10px;
+  background-color: palegreen;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+/* 下拉選單樣式 */
+.dropdown {
+  position: relative; /* 使 .dropdown 成為相對定位容器 */
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  top: 100%;
+  /* left: 50%; */
+}
+
+.dropdown:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  display: block;
+  margin-right: 0;
+  padding: 10px 20px;
+  width: 60px;
+  margin: 0 auto;
+  padding-right: 0;
+}
+
+/* 漢堡菜單樣式 */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: transform 0.4s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    background-color: #333;
+    top: 60px;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .menu.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .dropdown:hover .sub-menu {
+    display: block;
+  }
+  #menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+/* main */
+.page3_under {
+  background-color: #0F7BC0;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  align-items: center;
+}
+
+.footer_center {
+  text-align: center;
+  /* 文本水平居中 */
+  font-size: 16px;
+  /* 字体大小设置为16px */
+  line-height: 1.5;
+  /* 可选：设置行高，使文本垂直居中 */
+  padding: 20px 0;
+  /* 可选：添加顶部和底部内边距，以增加垂直居中的间距 */
+  /* color: white; */
+}
+
+.footer_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* 水平置中 */
+  align-items: center;
+}
+
+.footer_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* 水平置中 */
+  align-items: center;
+}
+
+.footer_under {
+  font-size: 12px;
+  text-align: right;
+  color: gray;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+h1 {
+  color: purple;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+.warp {
+  margin: 5px 10px;
+}
+.warp .warp_row {
+  margin: 1rem 0;
+  display: flex;
+}
+.warp .warp_row .warp_img {
+  margin-right: 0.5rem;
+}
+.warp .warp_row .warp_img img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10px;
+}
+.warp .warp_row p {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.card-img-top {
+  width: 8rem;
+  height: 8rem;
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+  background-color: greenyellow;
+  z-index: -1;
+  background-image: url(/images/hero-pg.jpg);
+  background-size: cover;
+  filter: blur(50%);
+  display: flex;
+  flex-direction: column; /* 將 Flexbox 容器的方向設置為垂直 */
+  justify-content: center; /* 將內部元素在主軸方向上（垂直方向）水平居中對齊 */
+  align-items: center;
+  border-radius: 15px; /* 调整圆角的大小 */
+  width: 95%;
+}
+.hero h2 {
+  position: absolute;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+.hero h5 {
+  margin-top: 5px;
+  height: auto;
+}
+.hero h4 {
+  position: absolute;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.hreo-img {
+  position: absolute;
+  width: 20rem;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.warp_p p {
+  font-size: 16px;
+}
+.warp_p span {
+  color: red;
+  font-weight: bold;
+}
+
+.purple {
+  color: blueviolet;
+}
+
+.fly-in {
+  font-weight: bold;
+  margin-bottom: -5rem;
+}
+
+.page1 p {
+  margin: 5px 1rem;
+  font-size: 16px;
+}
+.page1 span {
+  color: red;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.warp3 {
+  display: flex;
+  justify-content: space-around; /* 水平居中 */
+  align-items: center;
+  text-align: center;
+  margin: 0 1rem;
+}
+.warp3 .card {
+  width: 7.5rem;
+  margin: 0 5px;
+  overflow: hidden;
+}
+.warp3 .card img {
+  overflow: hidden;
+}
+.warp3 h5 {
+  margin: 0;
+}
+.warp3 i {
+  font-size: 30px;
+  color: green;
+  display: block;
+  font-weight: bolder;
+}
+
+.w3p p {
+  font-size: 16px;
+  text-align: center;
+  color: purple;
+}
+
+.w2p {
+  margin: 5px 1rem;
+}
+.w2p p {
+  font-size: 16px;
+}
+
+.page4 {
+  margin: 0 1rem;
+}
+
+.page5 {
+  margin: 0 1rem;
+}
+.page5 P {
+  font-size: 16px;
+  margin: 5px auto;
+}
+
+.page6 {
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .warp3 {
+    display: block;
+  }
+  .warp3 .card {
+    margin: 0 auto;
+  }
+  .warp3 i {
+    transform: rotate(90deg);
+  }
+}/*# sourceMappingURL=main.css.map */

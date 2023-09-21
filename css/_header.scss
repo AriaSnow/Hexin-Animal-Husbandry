@@ -1,0 +1,219 @@
+h1{
+    color: purple;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+}
+.warp{
+    margin:5px 10px  ;
+    .warp_row{
+        margin:1rem 0;
+        display: flex;
+        .warp_img{
+            margin-right: 0.5rem;
+            
+            img{
+                width:5rem;
+                height:5rem;
+                border-radius: 10px;
+            }
+        }
+        p{
+            margin-bottom: 0.5rem;
+        }
+    }
+
+}
+
+p{
+    font-size: 12px;
+    margin-bottom: 0;
+}
+// .card{
+//     &::before {
+//         content: "\2192"; /* 箭头的 Unicode 符号 */
+//         font-size: $arrow-size; /* 箭头的大小 */
+//         color: $arrow-color; /* 箭头的颜色 */
+//         transform: translate(-50%, -50%); /* 使箭头居中对齐 */
+//     }
+// }
+// .card::before {
+//     content: "\f061"; /* 使用 Font Awesome 图标的 Unicode 代码，可以根据需要更改 */
+//     font-family: 'Font Awesome 5 Free'; /* 设置 Font Awesome 字体 */
+//     font-size: 24px; /* 箭头的大小 */
+//     color: green; /* 箭头的颜色 */
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%); /* 使箭头居中对齐 */
+// }
+.card-img-top{
+    width: 8rem;
+    height: 8rem;
+}
+
+.hero{
+    position: relative;
+    height:80vh;
+    background-color: greenyellow;
+    z-index: -1;
+    // background: linear-gradient(to bottom right, #e5f376, #fefefe, #d3f070);
+    background-image:url(/images/hero-pg.jpg);
+    background-size: cover;
+    filter: blur(50%) ;
+    // 模糊度
+    display: flex;
+    flex-direction: column; /* 將 Flexbox 容器的方向設置為垂直 */
+    justify-content: center; /* 將內部元素在主軸方向上（垂直方向）水平居中對齊 */
+    align-items: center;
+    border-radius: 15px; /* 调整圆角的大小 */
+    width: 95%;
+    h2{
+        position: absolute;
+        margin-bottom: 2rem;
+        font-weight: bolder;
+        // z-index: 1;
+    }
+    h5{
+        margin-top: 5px;
+        height: auto;
+    }
+    h4{
+        position: absolute;
+        justify-content: flex-end;
+        // color: #A8D5BA;
+        // z-index: 1;
+        margin-top: 20px;
+    }
+    // img{
+        
+    // }
+}
+.hreo-img{
+    position: absolute;
+    width: 20rem;
+    z-index: -1;
+    opacity: 0.2;
+}
+// .hero_img{
+//     background-color: rgba(255, 255, 255, 0.5);
+//      /* 使内容定位相对于此容器 */
+//     text-align: center;
+//     z-index: 2;
+//     max-width: 100%; /* 图像宽度最大为其容器宽度 */
+//     height: 8rem; 
+// }
+
+.warp_p{
+    p{
+        font-size: 16px;
+    }
+    span{
+        color: red;
+        font-weight:bold;
+    }
+}
+.purple{
+    color: blueviolet;
+}
+.fly-in{
+    font-weight: bold;
+    margin-bottom: -5rem;
+}
+
+// .fly-in {
+//     transform: translateY(100%);
+//     opacity: 0;
+//     transition: transform 1s ease, opacity 1s ease;
+// }
+
+// .row{
+//     i{
+//         display: block;
+//     }
+// }
+
+.page1{
+    p{
+        margin: 5px 1rem;
+        font-size: 16px;
+    }
+    span{
+        color: red;
+        
+    }
+}
+.bold{
+
+    font-weight: bolder;
+}
+.warp3{
+    display: flex;
+    justify-content: space-around;/* 水平居中 */
+    align-items: center; 
+    text-align: center;
+    margin: 0 1rem;
+    .card{
+        width: 7.5rem;
+        margin: 0 5px;
+        overflow: hidden;
+        img{
+            overflow: hidden;
+        }
+        
+    }
+    h5{
+        margin: 0;
+    }
+    i{
+        font-size: 30px;
+        color: green;
+        display: block;
+        // margin: 0 10px;
+        font-weight: bolder;
+    }
+
+}
+.w3p{
+    p{  
+        font-size: 16px;
+        text-align: center;
+        color: purple;
+    }
+
+    }
+    
+.w2p{
+    // background-color: red;
+
+    margin: 5px 1rem;
+    p{
+        font-size: 16px;
+    }
+
+}
+.page4{
+    margin: 0 1rem;
+}
+.page5{
+    margin: 0 1rem;
+    P{
+        font-size: 16px;
+        margin: 5px auto;
+    }
+}
+.page6{
+    margin: 0 1rem;
+}
+@media screen and (max-width: 768px){
+    .warp3{
+        display: block;
+        .card{
+            margin: 0 auto;
+        }
+        i{
+            transform: rotate(90deg);
+        }
+    }
+
+}
