@@ -1,4 +1,21 @@
 @charset "UTF-8";
+.tracking-in-expand-fwd-bottom {
+  animation: tracking-in-expand-fwd-bottom 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@keyframes tracking-in-expand-fwd-bottom {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px) translateY(500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
 /* 基本樣式 */
 body {
   font-family: Arial, sans-serif;
@@ -325,6 +342,10 @@ p {
 
 .page6 {
   margin: 0 1rem;
+}
+
+.btn {
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
