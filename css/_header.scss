@@ -55,7 +55,7 @@ p{
 .hero{
     position: relative;
     height:80vh;
-    background-color: greenyellow;
+    background: linear-gradient(to bottom, greenyellow, green);
     z-index: -1;
     // background: linear-gradient(to bottom right, #e5f376, #fefefe, #d3f070);
     background-image:url(/images/hero-pg.jpg);
