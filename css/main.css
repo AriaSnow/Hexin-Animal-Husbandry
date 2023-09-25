@@ -223,10 +223,17 @@ p {
   height: 8rem;
 }
 
+.h1_md {
+  font-size: 18px;
+  margin: 0;
+  display: inline;
+  color: #000;
+}
+
 .hero {
   position: relative;
   height: 80vh;
-  background-color: greenyellow;
+  background: linear-gradient(to bottom, greenyellow, green);
   z-index: -1;
   background-image: url(/images/hero-pg.jpg);
   background-size: cover;
@@ -284,6 +291,12 @@ p {
 }
 .page1 span {
   color: red;
+}
+.page1 .hero_span {
+  display: inline-block;
+  margin: 0 1rem;
+  color: #000;
+  font-size: 18px;
 }
 
 .bold {

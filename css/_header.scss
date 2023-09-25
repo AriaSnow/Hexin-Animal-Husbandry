@@ -52,6 +52,12 @@ p{
     height: 8rem;
 }
 
+.h1_md{
+    font-size: 18px;
+    margin: 0;
+    display: inline;
+    color: #000;
+}
 .hero{
     position: relative;
     height:80vh;
@@ -141,7 +147,12 @@ p{
     }
     span{
         color: red;
-        
+    }
+    .hero_span{
+        display: inline-block;
+        margin: 0 1rem;
+        color: #000;
+        font-size: 18px;
     }
 }
 .bold{
@@ -209,6 +220,7 @@ p{
 .btn{
     margin:0 auto;
 }
+
 
 @media screen and (max-width: 768px){
     .warp3{
