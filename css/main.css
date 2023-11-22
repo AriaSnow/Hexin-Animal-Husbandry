@@ -235,7 +235,7 @@ p {
   height: 80vh;
   background: linear-gradient(to bottom, greenyellow, green);
   z-index: -1;
-  background-image: url(/images/hero-pg.jpg);
+  background-image: url(images/hero-pg.jpg);
   background-size: cover;
   filter: blur(50%);
   display: flex;
@@ -269,7 +269,7 @@ p {
 }
 
 .warp_p p {
-  font-size: 16px;
+  font-size: 20px;
 }
 .warp_p span {
   color: red;
@@ -287,7 +287,7 @@ p {
 
 .page1 p {
   margin: 5px 1rem;
-  font-size: 16px;
+  font-size: 20px;
 }
 .page1 span {
   color: red;
@@ -329,7 +329,7 @@ p {
 }
 
 .w3p p {
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   color: purple;
 }
@@ -338,7 +338,7 @@ p {
   margin: 5px 1rem;
 }
 .w2p p {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .page4 {
@@ -349,7 +349,7 @@ p {
   margin: 0 1rem;
 }
 .page5 P {
-  font-size: 16px;
+  font-size: 20px;
   margin: 5px auto;
 }
 
