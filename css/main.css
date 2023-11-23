@@ -235,7 +235,7 @@ p {
   height: 80vh;
   background: linear-gradient(to bottom, greenyellow, green);
   z-index: -1;
-  background-image: url(images/hero-pg.jpg);
+  background-image: url(images/hero-pg.webp);
   background-size: cover;
   filter: blur(50%);
   display: flex;
